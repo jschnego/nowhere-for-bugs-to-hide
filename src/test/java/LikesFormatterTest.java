@@ -20,4 +20,11 @@ public class LikesFormatterTest {
         String label = LikesFormatter.format(List.of("Jane"));
         assertThat(label).isEqualTo("Jane likes this");
     }
+
+    @Test
+    @DisplayName("For two users, their names should be separated by 'and'")
+    void shouldConnectTwoUsersWithAnd() {
+        String label = LikesFormatter.format(List.of("Jane", "John"));
+        assertThat(label).isEqualTo("Jane and John like this");
+    }
 }
