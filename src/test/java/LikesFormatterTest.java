@@ -27,4 +27,11 @@ public class LikesFormatterTest {
         String label = LikesFormatter.format(List.of("Jane", "John"));
         assertThat(label).isEqualTo("Jane and John like this");
     }
+
+    @Test
+    @DisplayName("For three users, the first two names should be separated by a comma")
+    void shouldHaveCommaSeparationForThreeUsers() {
+        String label = LikesFormatter.format(List.of("Jane", "John", "Gina"));
+        assertThat(label).isEqualTo("Jane, John and Gina like this");
+    }
 }

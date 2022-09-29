@@ -8,6 +8,10 @@ public class LikesFormatter {
     }
 
     private static String concatenate(List<String> users) {
-        return String.join(" and ", users);
+        String joined = String.join(" and ", users);
+        if (users.size() == 3) {
+            joined = joined.replaceFirst(" and ", ", ");
+        }
+        return joined;
     }
 }
