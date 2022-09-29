@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="LikesFormatterTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-09-29T03:52:53" hostname="Jans-MacBook-Pro-2.local" time="0.059">
+<testsuite name="LikesFormatterTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2022-09-29T03:56:02" hostname="Jans-MacBook-Pro-2.local" time="0.062">
   <properties/>
-  <testcase name="For an empty list, a predefined message should be returned" classname="LikesFormatterTest" time="0.059"/>
+  <testcase name="For an empty list, a predefined message should be returned" classname="LikesFormatterTest" time="0.06"/>
+  <testcase name="For a single user, their name should be indicated" classname="LikesFormatterTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
