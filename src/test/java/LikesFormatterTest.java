@@ -10,6 +10,6 @@ public class LikesFormatterTest {
     @Test
     @DisplayName("For an empty list, a predefined message should be returned")
     void shouldPrintNoOneLikesThisForEmptyList() {
-        assertThat(new LikesFormatter().format(List.of())).isEqualTo("No one likes this");
+        assertThat(LikesFormatter.format(List.of())).isEqualTo("No one likes this");
     }
 }
