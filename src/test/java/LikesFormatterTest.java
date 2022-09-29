@@ -34,4 +34,11 @@ public class LikesFormatterTest {
         String label = LikesFormatter.format(List.of("Jane", "John", "Gina"));
         assertThat(label).isEqualTo("Jane, John and Gina like this");
     }
+
+    @Test
+    @DisplayName("For more than three users, the list should be truncated and a number given")
+    void shouldTruncateForMoreThanThreeUsers() {
+        String label = LikesFormatter.format(List.of("Jane", "John", "Gina", "Jim"));
+        assertThat(label).isEqualTo("Jane, John and 2 others like this");
+    }
 }
